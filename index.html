@@ -10,26 +10,40 @@
     <div="container">
         <h1>Sign Up</h1>
         <form id="signup-form" action="process_signup.php" method="POST">
-            <label for="firstname">firstname:</label>
-            <input type="text" id="firstname" name="firstname" required>
-        
-            <label for="lastname">lastname:</label>
-            <input type="text" id="lastname" name="lastname" required>
-        
-            <label for="phonenumber">phonenumber:</label>
-            <input type="tel" id="phonenumber" name="phonenumber" placeholder="please enter your phonenumber" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button id="password-toggle" type="button" onclick="togglePasswordVisibility()">Show Password</button>
-        
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-        
-            <input type="submit" value="Sign Up">
+            <div class="input-container">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            
+            <div class="input-container">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            
+            <div class="input-container">
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="Please enter your phone number" required>
+            </div>
+            
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button id="password-toggle" type="button" onclick="togglePasswordVisibility()">Show Password</button>
+            </div>
+            
+            <div class="input-container">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            
+            <div class="input-container">
+                <input type="submit" value="Sign Up">
+            </div>
         
             <img src="yellow.jpg" alt="background">
         

@@ -1,38 +1,85 @@
-label {
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the entire body */
+body {
+    background-image: url("yellow.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Fixed background */
+    display: flex;
+    justify-content: flex-end;
+    /* Align the form to the right */
+    align-items: center;
+    height: 100vh;
+    /* Center vertically within the viewport */
+}
+
+/* Apply styles to the form */
+#signup-form {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    /* Take up one-third of the screen width */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect */
+}
+
+/* Apply styles to form labels */
+.input-container label {
     display: block;
-    /* Display labels as block elements */
-    margin-bottom: 10px;
-    /* Spacing between labels */
+    /* Display labels as block elements for spacing */
+    margin-bottom: 5px;
+    /* Add some space below labels */
+    font-weight: bold;
 }
 
 /* Apply styles to form inputs */
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="password"] {
+.input-container input[type="text"],
+.input-container input[type="tel"],
+.input-container input[type="email"],
+.input-container input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    transition: border-color 0.3s;
-    /* Smooth transition for border color */
+    transition: border-color 0.3s, background-color 0.3s;
+    /* Add transition for smoother color change */
 }
 
-/* Change input border color on focus */
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
+/* Change input border color on focus and background color to blue */
+.input-container input[type="text"]:focus,
+.input-container input[type="tel"]:focus,
+.input-container input[type="email"]:focus,
+.input-container input[type="password"]:focus {
     border-color: #0078d4;
-    /* Change to your desired focus color */
+    background-color: #e6f7ff;
+    /* Change background color to blue */
 }
 
 /* Apply styles to the "Show Password" button */
 #password-toggle {
     background-color: #0078d4;
-    /* Button background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* Style the submit button */
+.input-container input[type="submit"] {
+    background-color: #0078d4;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -40,11 +87,10 @@ input[type="password"]:focus {
     cursor: pointer;
 }
 
-/* Style the background image */
-div {
-    background-image: url("yellow.jpg");
-    background-size: cover;
-    /* Cover the entire container with the background image */
-    height: 100vh;
-    /* Adjust the height as needed */
+/* Center the submit button horizontally */
+.input-container input[type="submit"] {
+    margin: 0 auto;
 }
+ .container {
+    width: 33%;
+ }
