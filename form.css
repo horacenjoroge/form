@@ -1,0 +1,50 @@
+label {
+    display: block;
+    /* Display labels as block elements */
+    margin-bottom: 10px;
+    /* Spacing between labels */
+}
+
+/* Apply styles to form inputs */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    /* Smooth transition for border color */
+}
+
+/* Change input border color on focus */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #0078d4;
+    /* Change to your desired focus color */
+}
+
+/* Apply styles to the "Show Password" button */
+#password-toggle {
+    background-color: #0078d4;
+    /* Button background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the background image */
+div {
+    background-image: url("yellow.jpg");
+    background-size: cover;
+    /* Cover the entire container with the background image */
+    height: 100vh;
+    /* Adjust the height as needed */
+}
