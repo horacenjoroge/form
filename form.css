@@ -3,12 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("yellow.jpg");
 }
 
 /* Apply styles to the entire body */
 body {
-   
+background-image: url("/jpg/yellow.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,6 +22,7 @@ body {
 
 /* Apply styles to the form */
 #signup-form {
+    z-index: 1;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     padding: 20px;
